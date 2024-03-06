@@ -83,16 +83,3 @@ cluster_df.columns = list(X_test.columns) + ['Cluster Label']
 for i in range(kmeans.n_clusters):
     print(f"\nCluster {i}:")
     print(cluster_df[cluster_df['Cluster Label']==i].describe())
-
-# Additional features to enhance analysis
-# - Time signature
-# - Mode
-# - Acousticness
-
-# Additional models to compare performance
-# - DBSCAN
-# - Hierarchical clustering
-
-# Robustness testing with external validation
-# - Collect additional datasets for comparison and testing
-# - Compare results with alternative clustering methods and metrics
